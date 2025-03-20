@@ -3,46 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <p>   <style>
+     <style>
         .square {
             width: 100px;
             height: 100px;
             background-color: green;
+            display: inline-block;
         }
-        .rectangle {
-          width: 150px;
-          height: 100px;
-          background-color:#ff007f;
-        }
+        
         .circle {
           width: 100px;
           height: 100px;
           background-color: gray;
           border-radius: 50%;
+          margin: 10px 10px 10px 10px;
+          display: inline-block;
         }
+
+        .rectangle {
+          width: 150px;
+          height: 100px;
+          background-color:#ff007f;
+          display: inline-block;
+        }
+        
         .triangle-up {
           width: 0;
           height: 0;
-          border-left: 50px solid transparent;
-          border-right: 50px solid transparent;
-          border-bottom: 100px solid darkred;
-        .triangle{
-          width: 0px;
-          height: 0px;
-          border-left: 20px solid transparent;
-          border-right: 20px solid transparent;
-          border-bottom: 60px solid dark
-
+          border-left: 25px solid transparent;
+          border-right: 25px solid transparent;
+          border-bottom: 50px solid #555;
+          display: inline-block;
+        }
+        
+        .triangle-right {
+          width: 0;
+          height: 0;
+          border-top: 25px solid transparent;
+          border-left: 50px solid #555;
+          border-bottom: 25px solid transparent;
         }
 
-
+        
+        .triangle-down {
+          width: 0;
+          height: 0;
+          border-left: 25px solid transparent;
+          border-right: 25px solid transparent;
+          border-top: 50px solid #555;
+          display: inline-block;
+        }
+        .trapezoid {
+          border-bottom: 50px solid #555;
+          border-left: 25px solid transparent;
+          border-right: 25px solid transparent;
+          height: 0;
+          width: 125px;
+        }
     </style>
-</head>
-<body>
-   <p> <div class="square"></div>
-    <div class="circle"></div>
-    <div class="rectangle"></div>
-    <div class="triangle-up"></div></p>
-    <div class="triangle"></div>
-</body>
+    <div>
+      <div class="square"></div>
+        <div class="circle"></div>
+        <div class="rectangle"></div>
+        <div class="traingle-up"></div>
+      </div>
+      <div>
+        <div class="traingle-down"></div>
+        <div class="trapezoid"></div>
+        <div class="triangle-down"></div>
+
+    </div>
+  </head>
+  <body>
+
+
+
+
 </html>
